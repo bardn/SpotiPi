@@ -24,6 +24,7 @@ def setup_matrix():
     options.parallel = 1
     options.hardware_mapping = 'adafruit-hat'
     options.brightness = 80
+    options.gpio_slowdown = 4
     return RGBMatrix(options=options)
 
 def fetch_current_track(access_token):
